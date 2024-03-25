@@ -1,0 +1,163 @@
+
+
+/* body{
+    background-color: #f6fbf6 !important;
+} */
+
+
+html {
+    height:100%;
+  }
+  
+  body {
+    margin:0;
+    
+  }
+  
+  .bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #00c062 50%, #262721 50%);
+    /* color: #c9c7c7; */
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+  
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+  }
+  
+  .bg3 {
+    animation-duration:5s;
+  }
+  
+  .content {
+    background-color:rgba(255,255,255,.8);
+    border-radius:.25em;
+    box-shadow:0 0 .25em rgba(0,0,0,.25);
+    box-sizing:border-box;
+    left:50%;
+    padding:10vmin;
+    position:fixed;
+    text-align:center;
+    top:50%;
+    transform:translate(-50%, -50%);
+  }
+  
+  h1 {
+    font-family:monospace;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
+
+
+
+
+
+  .fade-in-out {
+    width: 200px;
+    opacity: 0;
+    animation: fade-in 1s ease-in forwards, fade-out 1.2s 1s ease-out forwards;
+  }
+  
+  @keyframes fade-in {
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade-out {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+
+
+  .logoTop{
+    /* font-size: 2rem; */
+    height: 50px;
+    width: 50px;
+  }
+
+
+  .glyphicon{ 
+    width: 80px !important;
+    -webkit-transition: 0.6s ease-out;
+    -moz-transition:  0.6s ease-out;
+    transition:  0.6s ease-out;
+  }
+
+  .glyphicon:hover {
+
+      -webkit-transform: rotateZ(720deg);
+      -moz-transform: rotateZ(720deg);
+      transform: rotateZ(720deg);
+  }
+
+
+
+  .heading-with-line {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hover-line {
+    position: absolute;
+    bottom: 0;
+    left: 50%; /* Start from the middle */
+    width: 0%;
+    height: 2px;
+    background-color: #00c062;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+  }
+  
+  /* Expand the line and move it to both sides on hover */
+  .heading-with-line:hover .hover-line {
+    left: 0; /* Move to the left edge */
+    width: 100%; /* Expand to full width */
+  }
+
+.spanTxt{
+ color: #c9c7c7;
+ /* color: #555555; */
+ /* color: #1c1c1c; */
+}
+
+  .linearTxt{
+    /* font-weight: 800 !important; */
+    background: -webkit-linear-gradient(#dcdbdb, #525252);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+
+
+  .horizontal-scroll-container {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: 100vh;
+  }
+  
+
+
+
+
+
